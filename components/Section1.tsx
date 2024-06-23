@@ -15,7 +15,7 @@ export default function Section1() {
                 <p className="w-full m-[1px] p-[1px] md:w-1/2 section1para">As the world rapidly evolves, we are focused in our mission to empower you with the knowledge needed to keep you ahead in a world where adaptability is paramount.</p>
             </div>
             <div className="border border-blue-500">
-                <p className="section1para m-[1px] p-[1px]">
+                <p className="section1para">
                 BigMint is a trusted platform for price reporting, market intelligence &amp; consulting for commodities.<br></br>
                 We enable businesses to take critical market decisions, offering reliable insights and consulting services for a host of Commodity markets.
                 </p>

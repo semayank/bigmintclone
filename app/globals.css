@@ -98,7 +98,20 @@
     .section2header{
       font-size: clamp(14px,1.46vw,30px);
     }
+    .cardlabelwidth{
+      width: calc(100% - 15px);
+      font-size: clamp(14px,1.5vw,20px);
+      
+    }
+    .arrowimage{
+      width:clamp(12px,1.5vw,17px);
+      height:clamp(13px,1.5vw,19px);
+
+    }
+    .cardimage{
+      width: clamp(170px,19.5vw,382px);
+     }
+ 
   }
 
-  
-  
+

@@ -11,7 +11,7 @@ export default function Section2(){
      </div> 
      
      <div className="border border-black m-1 p-1">
-        <p className={`${archivo500.className}`}>BigMint is a gateway to the world of insights spanning metals, minerals, energies, and providing 600+ commodity price assessments across 30+ countries.</p>
+        <p className={`${archivo500.className} section1para`}>BigMint is a gateway to the world of insights spanning metals, minerals, energies, and providing 600+ commodity price assessments across 30+ countries.</p>
         </div>         
     </div>
     </section>

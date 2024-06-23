@@ -12,6 +12,10 @@ export const archivo500 = Archivo({
     weight: ['500'],
   });
 
+  export const archivo400 = Archivo({
+    subsets: ["latin"],
+    weight: ['400'],
+  });
 
   export const archivo700 = Archivo({
     subsets: ["latin"],
