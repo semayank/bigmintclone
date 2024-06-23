@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeadNavBar from "./HeadNavBar";
+import { archivo700 } from "@/lib/fonts";
 
 
 
@@ -10,7 +11,7 @@ export default function Header() {
         <div className="relative flex flex-col  w-full">
           <video
             autoPlay
-            className="object-cover h-[580px] w-full"
+            className="object-cover videourlheight w-full"
             controls={false}
             muted
             loop
@@ -39,7 +40,8 @@ export default function Header() {
             </nav>
           </div>
       
-          <div className="absolute headerparadiv font-bold text-[#e3effd] top-[30%]  border border-pink-500 left-[12%]"><p className="headerpara">
+          <div className="absolute headerparadiv font-bold text-[#e3effd] top-[30%]  border border-pink-500 left-[12%]">
+            <p className={`${archivo700.className} headerpara`}>
           We are a trusted platform for price reporting, market intelligence &amp; consulting for commodities
           </p></div>
           <div className=" absolute z-10 left-0 w-full  align-middle  bottom-0 max-w-full">
