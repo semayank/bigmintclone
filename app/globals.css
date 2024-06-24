@@ -83,10 +83,10 @@
 
     }
     .headerparadiv{
-      width: clamp(325px,65vw,1248px) ;
+      width: clamp(325px,67vw,1248px) ;
     }
     .headerpara {
-      font-size: clamp(20px,3.75vw,76.76px);
+      font-size: clamp(28px,3.75vw,76.76px);
     }
 
     .section1header{
@@ -114,6 +114,14 @@
     }
     .cardimage{
       width: clamp(170px,19.5vw,382px);
+     }
+
+     .servicescardfont{
+      font-size: clamp(16px,1.46vw,30px);
+     }
+
+     .rightarrowsize{
+      width:clamp(16px,1.46vw,30px)
      }
  
   }

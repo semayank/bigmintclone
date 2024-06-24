@@ -34,7 +34,7 @@ export default function Header() {
                   </button>
                 </div>
                 <div>
-                    <img src="./bm_white_logo.png" className=" object-scale-down"/>
+                    <img src="./bm_white_logo.png" className="object-scale-down"/>
                 </div>
               </div>
             </nav>

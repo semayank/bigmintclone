@@ -1,8 +1,9 @@
 import { archivo500 ,archivo700 } from "@/lib/fonts";
+import BodyLayout from "./layouts/BodyLayout";
 export default function Section1() {
   return (
     <>
-      <section className="container mx-auto px-[5%] border border-blue-500 m-0.5 p-0.5">
+      <BodyLayout>
         <div className="border border-green-500 m-[1px] p-[1px] flex flex-col items-center justify-between">
           <div className="flex flex-row items-center justify-start w-full border border-pink-500 m-[1px] p-[1px]">
             <h1 className={`${archivo700.className} section1header  border border-black p-[1px] mx-[1px] mt-[25px] mb-[20px] text-[#FF4036]`}>
@@ -22,7 +23,7 @@ export default function Section1() {
             </div>
           </div>
         </div>
-      </section>
+        </BodyLayout>
     </>
   );
 }

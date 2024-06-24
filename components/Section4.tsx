@@ -1,8 +1,9 @@
 import { archivo500 } from "@/lib/fonts";
+import BodyLayout from "./layouts/BodyLayout";
 
 export default function Section4(){
     return <>
-     <section className="container mx-auto px-[5%] border border-blue-500 m-0.5 p-0.5">
+    <BodyLayout>
     <div className="border border-green-500 m-[1px] p-[1px] ">
      <div className="border border-black m-1 p-1 flex flex-col items-center justify-between gap-y-[15px]">
         <div className="flex flex-row items-center justify-start border border-pink-500 m-1 p-1 w-full">
@@ -19,6 +20,6 @@ export default function Section4(){
         </div>           
      </div>
     </div>
-    </section>
+    </BodyLayout>
     </>
 }

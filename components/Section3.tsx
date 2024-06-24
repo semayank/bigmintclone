@@ -1,6 +1,7 @@
 import { archivo500, archivo700 } from "@/lib/fonts";
 import Card from "./Card";
 import { archivo400 } from "@/lib/fonts";
+import BodyLayout from "./layouts/BodyLayout";
 
 export default function Section3(){
     const arr=[{
@@ -21,7 +22,7 @@ export default function Section3(){
     }
 ];
     return (<>
-    <section className="container mx-auto px-[5%] border border-blue-500 m-0.5 p-0.5">
+    <BodyLayout>
     <div className="border border-green-500 m-[1px] p-[1px] ">
         <div className="border border-black m-1 p-1 gap-y-1 flex flex-col md:gap-y-0 md:gap-x-1 md:flex-row items-center justify-between">
             {
@@ -38,6 +39,6 @@ export default function Section3(){
         </div>
           
     </div>
-    </section>
+    </BodyLayout>
     </>)
 }

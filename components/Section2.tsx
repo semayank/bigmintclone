@@ -1,8 +1,9 @@
 import {archivo500, archivo700 } from "@/lib/fonts";
+import BodyLayout from "./layouts/BodyLayout";
 
 export default function Section2(){
     return (<>
-    <section className="container mx-auto px-[5%] border border-blue-500 m-0.5 p-0.5">
+    <BodyLayout>
     <div className="border border-green-500 m-[1px] p-[1px] flex flex-col items-center justify-between">
         
      <div className="flex flex-row gap-x-2 w-full border border-black m-1 p-1 items-center justify-start">
@@ -14,6 +15,6 @@ export default function Section2(){
         <p className={`${archivo500.className} section1para`}>BigMint is a gateway to the world of insights spanning metals, minerals, energies, and providing 600+ commodity price assessments across 30+ countries.</p>
         </div>         
     </div>
-    </section>
+    </BodyLayout>
     </>)
 }
