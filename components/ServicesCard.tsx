@@ -1,4 +1,5 @@
 import { archivo500, archivo700 } from "@/lib/fonts";
+import Link from "next/link";
 
 
 export type ServicesCardPropsType={
@@ -16,7 +17,8 @@ export default function ServicesCard({image_url,heading,content}:ServicesCardPro
         <div><p className={`${archivo500.className} servicescardfont`}>{content}</p></div>
     </div>
     </div>
-        <div className="border border-orange-500 m-0.5 p-0.5 w-full"><div className="border border-green-500 m-0.5 p-0.5 "><img src={"./rightarrow.png"} className="rightarrowsize" alt="rightarrow"></img></div>
+        <div className="border border-orange-500 m-0.5 p-0.5 w-full">
+            <Link href={"/"}><div className="border border-green-500 m-0.5 p-0.5 "><img src={"./rightarrow.png"} className="rightarrowsize" alt="rightarrow"></img></div></Link>
     </div></div>
     </>
 }
