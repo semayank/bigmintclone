@@ -8,16 +8,19 @@ import Section5 from "@/components/Section5";
 import Section6 from "@/components/Section6";
 import Chat from "@/components/Chat";
 import Section7 from "@/components/Section7";
+import { Suspense } from "react";
+import HomeLoadingPage from "./loading";
 
 
 
 export default function Home() {
   return (
+    
     <MainLayout>
     <main className="">
-      <Section1/>
-      <Section2/>
-      <Section3/>
+    <Section1/>
+    <Section2/>
+    <Section3/>
       <Section4/>
       <Section5/>
       <Section6/>
@@ -25,5 +28,6 @@ export default function Home() {
       <Chat/>
     </main>
     </MainLayout>
+    
   );
 }

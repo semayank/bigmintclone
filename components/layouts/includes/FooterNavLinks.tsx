@@ -1,24 +1,33 @@
 import Link from "next/link"
+import FooterAccordian from "./FooterAccordion"
+import FooterAccordian2 from "./FooterAccordian2"
 
 
 export default function FooterNavLinks(){
-    const navheading=["Company","Products","Region","Our Features","Help"]
-    const headingcontents=[{"Company":{0:"About BigMint",1:"Contact us",2:"",3:"",4:"",5:""}},{"Products":{}},{"Region":{}}
-        ,{"Our Features":{}},{"Help":{}}
-    ]
-    return (<>{
-    navheading.map((val,ind,oa)=>{ 
-        return <nav key={`${val}_${ind}`} className=" m-1 ">
-            <h5 className=" text-[16px] text-[#3B444F] m-1  font-bold ">
-              {val}
-            </h5>
-            {
-           headingcontents.map((val1,ind1,oa1)=>{return <ul key={`${val1}_${ind1}`} className=" text-[16px] font-medium not-italic gap-4  m-1  inline-flex flex-col">
-              <Link href={"/"}><li className="hover:underline cursor-pointer">
-              {val}[`${ind1}`] </li></Link>
-            </ul>})
-           }
-          </nav>})
-        }    
+    const navheading=[{header:"Company",contents:["About BigMint","Contact us","Help & FAQ","Career","CoalMint","SiteMap"]}, 
+    {header:"Products",contents:["Iron Ore","Coal","Scrap & Metallics","Steel","Ferro Alloys","Logistics","Ship Breaking"]}
+    ,{header:"Region",contents:["India","China","South Asia","South East Asia","Far East Asia","MEA (Middle East Africa)","CIS Nations","UK, Europe","Americas","Oceania"]}
+    ,{header:"Our Features",contents:["Prices","Insights","Tenders","Statistics","Reports","Info-graphics","Data Licensing","Content Partnership"]}
+    ,{header:"Help",contents:["Contact us","Terms and Conditions","Privacy Policy","Old Website"]}]
+
+    
+  
+    return (<>
+       <div className="border border-black m-0.5 p-0.5 grid grid-cols-1 gap-4  border-b md:hidden">
+        {
+          navheading.map((item)=>{
+            return <><FooterAccordian header={item.header} contents={item.contents}/></>
+          })
+        }
+       </div>
+       <div className="border gap-6 border-black m-0.5 p-0.5 hidden md:grid md:grid-cols-3 lg:grid-cols-5">
+       {
+          navheading.map((item)=>{
+            return <><FooterAccordian2 header={item.header} contents={item.contents}/></>
+          })
+        }
+       </div>
+      
+    
     </>)
 }
