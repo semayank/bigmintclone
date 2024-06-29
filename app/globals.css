@@ -1,148 +1,161 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 0 0% 3.9%;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
 
-      --primary: 0 0% 9%;
-      --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
 
-      --secondary: 0 0% 96.1%;
-      --secondary-foreground: 0 0% 9%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
 
-      --muted: 0 0% 96.1%;
-      --muted-foreground: 0 0% 45.1%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
 
-      --accent: 0 0% 96.1%;
-      --accent-foreground: 0 0% 9%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-      --border: 0 0% 89.8%;
-      --input: 0 0% 89.8%;
-      --ring: 0 0% 3.9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
 
-      --radius: 0.5rem;
-
-      
-    }
-
-    .dark {
-      --background: 0 0% 3.9%;
-      --foreground: 0 0% 98%;
-
-      --card: 0 0% 3.9%;
-      --card-foreground: 0 0% 98%;
-
-      --popover: 0 0% 3.9%;
-      --popover-foreground: 0 0% 98%;
-
-      --primary: 0 0% 98%;
-      --primary-foreground: 0 0% 9%;
-
-      --secondary: 0 0% 14.9%;
-      --secondary-foreground: 0 0% 98%;
-
-      --muted: 0 0% 14.9%;
-      --muted-foreground: 0 0% 63.9%;
-
-      --accent: 0 0% 14.9%;
-      --accent-foreground: 0 0% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
-
-      --border: 0 0% 14.9%;
-      --input: 0 0% 14.9%;
-      --ring: 0 0% 83.1%;
-    }
+    --radius: 0.5rem;
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@media (min-width: 500px) {
+  .videourlheight {
+    height: clamp(580px, 90.48vh, 977px);
+  }
+  .headerparadiv {
+    width: clamp(325px, 67vw, 1248px);
+  }
+  .headerpara {
+    font-size: clamp(28px, 3.75vw, 76.76px);
   }
 
-  @media (min-width:500px) {
-    .videourlheight{
-      height:clamp(580px,90.48vh,977px)
-
-    }
-    .headerparadiv{
-      width: clamp(325px,67vw,1248px) ;
-    }
-    .headerpara {
-      font-size: clamp(28px,3.75vw,76.76px);
-    }
-
-    .section1header{
-      font-size:clamp(21px,3.3vw,63px);
-  
-    }
-    .section1para{
-      font-size:clamp(12px,1.46vw,38px);
-      color:black;
-      border: 1px solid black;
-    }
-
-    .section2header{
-      font-size: clamp(14px,1.46vw,30px);
-    }
-    .cardlabelwidth{
-      width: calc(100% - 15px);
-      font-size: clamp(14px,1.5vw,20px);
-      
-    }
-    .arrowimage{
-      width:clamp(12px,1.5vw,17px);
-      height:clamp(13px,1.5vw,19px);
-
-    }
-    .cardimage{
-      width: clamp(170px,19.5vw,382px);
-     }
-
-     .servicescardfont{
-      font-size: clamp(16px,1.46vw,30px);
-     }
-
-     .rightarrowsize{
-      width:clamp(16px,1.46vw,30px)
-     }
- 
+  .section1header {
+    font-size: clamp(21px, 3.3vw, 63px);
+  }
+  .section1para {
+    font-size: clamp(12px, 1.46vw, 38px);
+    color: black;
+    border: 1px solid black;
   }
 
+  .section8header{
+    font-size: clamp(18px,2.12vw,40px);
+  }
+  .section8fonts {
+    font-size: clamp(14px, 1.46vw, 38px);
+    color: black;
+  }
 
-  .mask
-  {
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: black;
-      right: 0;
-      bottom: 0;
-      opacity: 0.5;
+  .section2header {
+    font-size: clamp(14px, 1.46vw, 30px);
   }
-  .mask+img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100px;
-      right: 0;
-      bottom: 0;
-      margin: auto;
+  .cardlabelwidth {
+    width: calc(100% - 15px);
+    font-size: clamp(14px, 1.5vw, 20px);
   }
+  .arrowimage {
+    width: clamp(12px, 1.5vw, 17px);
+    height: clamp(13px, 1.5vw, 19px);
+  }
+  .cardimage {
+    width: clamp(170px, 19.5vw, 382px);
+  }
+
+  .servicescardfont {
+    font-size: clamp(16px, 1.46vw, 30px);
+  }
+
+  .rightarrowsize {
+    width: clamp(16px, 1.46vw, 30px);
+  }
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+.mask + img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+
+.customloader{
+  border: 8px solid #FF6E20;
+  border-radius: 50%;
+  border-top: 13px solid #FFFFFF;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%);
+}

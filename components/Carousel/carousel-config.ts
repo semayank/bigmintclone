@@ -1,0 +1,16 @@
+export const companies = [
+  { id: 101, url: "/companies/adani.jpg" },
+  { id: 102, url: "/companies/ADITYA-BIRLA.jpg" },
+  { id: 103, url: "/companies/AMNS.jpg" },
+  { id: 104, url: "/companies/JINDAL.jpg" },
+  { id: 105, url: "/companies/JSW.jpg" },
+  { id: 106, url: "/companies/Maruti-SUZUKI.jpg" },
+  { id: 107, url: "/companies/Ministry-of-steel.jpg" },
+  { id: 108, url: "/companies/mitsubhi.jpg" },
+  { id: 109, url: "/companies/NMDC.jpg" },
+  { id: 110, url: "/companies/NOMURA.jpg" },
+  { id: 111, url: "/companies/RIO-TINTo.jpg" },
+  { id: 112, url: "/companies/SAIL.jpg" },
+  { id: 113, url: "/companies/TATA.jpg" },
+  { id: 114, url: "/companies/VALE.jpg" },
+];
