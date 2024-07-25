@@ -36,7 +36,7 @@ export default function Section9() {
   return (
     <>
       <BodyLayout>
-        <div className="border border-green-500 m-[1px] p-[1px]">
+        <div className="border  border-green-500 m-[1px] p-[1px]">
           <div className="border border-black flex flex-col items-center justify-between  gap-2 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {
             cards.map((card)=>{

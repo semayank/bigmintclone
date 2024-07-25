@@ -13,6 +13,8 @@ import { useEffect, useState } from "react";
 import { Loader } from "@/components/Loader";
 import Section8 from "@/components/Section8";
 import Section9 from "@/components/Section9";
+import Section10 from "@/components/Section10";
+import Section11 from "@/components/Section11";
 
 export default function Home() {
 
@@ -36,6 +38,8 @@ export default function Home() {
         <Section7 />
         <Section8/>
         <Section9/>
+        <Section10/>
+        <Section11/>
         <Chat />
       </main> }
     </MainLayout></> 
